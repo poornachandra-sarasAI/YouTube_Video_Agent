@@ -51,8 +51,6 @@ YouTube Agent/                 # Main YouTube processing module
 ├── yt_agent.py               # 🎯 MAIN FILE - YouTube URL input & chat interface
 ├── yt_transcript.py          # Transcript extraction & cleaning
 ├── rag_clean.py              # RAG implementation & chat functionality
-├── yt_agent_ui.py            # Optional Streamlit YouTube summarizer
-├── rag_ui.py                 # Optional RAG web interface
 ├── DejaVuSans.ttf            # Font for PDF generation
 └── temp files/               # Generated transcripts & PDFs
 ```
@@ -83,7 +81,7 @@ Before running this project, ensure you have:
 1. **Clone the repository**:
    ```bash
    git clone <repository-url>
-   cd "Ollama Project"
+   cd "YouTube_Video_Agent"
    ```
 
 2. **Create a virtual environment**:
@@ -112,7 +110,6 @@ Before running this project, ensure you have:
 Run the main YouTube chat agent:
 
 ```bash
-cd "YouTube Agent"
 python yt_agent.py
 ```
 
@@ -130,41 +127,12 @@ python yt_agent.py
 - Local processing for privacy
 - RAG-powered accurate responses
 
-### 2. YouTube Video Summarizer (Web Interface)
 
-Launch the optional web interface for video summarization:
-
-```bash
-cd "YouTube Agent"
-streamlit run yt_agent_ui.py
-```
-
-**Features:**
-- Web-based interface
-- Paste any YouTube URL
-- Generates AI-powered summary
-- Download cleaned transcript as PDF
-
-### 3. PDF Chat Application
-
-Run the PDF chat application:
-
-```bash
-streamlit run app.py
-```
-
-**Features:**
-- Upload PDF documents
-- Ask questions about PDF content
-- RAG-powered responses
-- Persistent vector database
-
-### 4. Direct Transcript Processing
+### 2. Direct Transcript Processing
 
 For direct transcript processing without chat:
 
 ```bash
-cd "YouTube Agent"
 python yt_transcript.py
 # Follow prompts to enter YouTube URL
 ```
@@ -240,13 +208,8 @@ Edit the model names in the respective files:
 
 ```python
 # In yt_agent.py (Main application)
-MODEL_NAME = "youtube-agent"  # Change to your preferred model
+MODEL_NAME = "llama3.2"  # Change to your preferred model
 
-# In yt_agent_ui.py (Web interface)
-MODEL_NAME = "youtube-agent"  # Change to your preferred model
-
-# In app.py (PDF chat)
-MODEL_NAME = "llama3.2"      # Change to your preferred model
 ```
 
 ### Embedding Model
