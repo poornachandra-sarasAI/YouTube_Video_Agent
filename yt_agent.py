@@ -7,7 +7,7 @@ TRANSCRIPT_FILE_NAME = "subtitle_file"
 CLEANED_TRANSCRIPT_FILE = "transcript_cleaned.txt"
 TRANSCRIPT_PDF = "transcript.pdf"
 DOC_PATH = "./transcript.pdf"  
-MODEL_NAME = "youtube-agent"
+MODEL_NAME = "llama3.2"
 EMBEDDING_MODEL = "nomic-embed-text"
 VECTOR_STORE_NAME = "simple-rag"
 
