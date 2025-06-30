@@ -37,15 +37,7 @@ An AI-powered tool that extracts YouTube video transcripts and enables interacti
 
 ## 🏗️ Project Structure
 
-```
-Ollama Project/
-├── README.md                   # This file
-├── requirements.txt            # Python dependencies
-├── app.py                     # Main PDF chat application
-├── internet_search.py         # Web search functionality
-├── pdf-rag.py                 # PDF processing utilities
-├── data/                      # Document storage
-│   └── NLP.pdf               # Sample PDF
+
 ```
 YouTube Agent/                 # Main YouTube processing module
 ├── yt_agent.py               # 🎯 MAIN FILE - YouTube URL input & chat interface
