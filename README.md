@@ -65,14 +65,14 @@ Before running this project, ensure you have:
    # Pull required models
    ollama pull llama3.2
    ollama pull nomic-embed-text
-   ollama pull youtube-agent  # Custom model (if available)
+
    ```
 
 ## 🚀 Installation
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/poornachandra-sarasAI/YouTube_Video_Agent
    cd "YouTube_Video_Agent"
    ```
 
@@ -92,7 +92,7 @@ Before running this project, ensure you have:
 4. **Additional requirements**:
    ```bash
    # Install additional system dependencies if needed
-   pip install streamlit fpdf2 yt-dlp
+   pip install fpdf2 yt-dlp
    ```
 
 ## 🎯 Usage
